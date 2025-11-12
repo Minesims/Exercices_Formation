@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulaire Exo 6</title>
+</head>
+<body>
+    <form>
+        <section id="centre_interets">
+            <label for="sport">Sport</label>
+            <input type="checkbox" id="sport" name="interets[]" value="sport">
+            
+            <label for="lecture">Lecture</label>
+            <input type="checkbox" id="lecture" name="interets[]" value="lecture">
+
+            <label for="voyage">Voyage</label>
+            <input type="checkbox" id="voyage" name="interets[]" value="voyage">
+
+            <label for="cuisine">Cuisine</label>
+            <input type="checkbox" id="cuisine" name="interets[]" value="cuisine">
+        </section>
+
+        <section id="abonnement">
+            <label for="basique">Basique</label>
+            <input type="radio" id="basique" name="abonnement" value="basique">
+
+            <label for="premium">Premium</label>
+            <input type="radio" id="premium" name="abonnement" value="premium">
+
+            <label for="aucun">Aucun</label>
+            <input type="radio" id="aucun" name="abonnement" value="aucun" autofocus="autofocus">
+        </section>
+
+        <label for="age">Âge</label>
+        <input type="number" id="age" name="age" min="18" max="120" required>
+        
+        <label for="pseudo">Pseudonyme</label>
+        <input type="text" id="pseudo" name="pseudo" size="10" maxlength="20" placeholder="4-20 caractères">
+
+        <label for="birthdate">Date de naissance</label>
+        <input type="date" id="birthdate" name="birthdate" max="2025-12-31">
+
+        <label for="CP">Code Postal</label>
+        <input type="number" id="CP" name="CP" value="75000" disabled="disabled" readonly="readonly">
+
+        <label for="commentary">Commentaires</label>
+        <input type="text" id="commentary" name="commentary" placeholder="Désactivé pour l’instant" disabled="disabled">
+    </form>
+</body>
+</html>

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulaire Exo 5</title>
+</head>
+<body>
+    <form action="data.php" method="POST">
+        <input type="checkbox" name="accept" value="conditions"> Conditions
+        <input type="checkbox" name="accept" value="mentions_legales"> Mentions Légales
+
+        <label for="genre">Genre</label>
+        <input type="radio" id="genre" name="genre" value="homme"> Homme
+        <input type="radio" id="genre" name="genre" value="femme"> Femme
+        <input type="radio" id="genre" name="genre" value="autre"> Autre
+
+        <label for="pays">Pays</label>
+        <select name="pays" id="pays">
+            <option value="france">France</option>
+            <option value="uk">Royaume-Uni</option>
+            <option value="swiss">Suisse</option>
+            <option value="espagne">Espagne</option>
+            <option value="italie">Italie</option>
+            <option value="portugal">Portugal</option>
+            <option value="belgique">Belgique</option>
+        </select>
+
+        <label for="mail">Email</label>
+        <input type="email" id="mail" name="email">
+
+        <label for="birthdate">Date de naissance</label>
+        <input type="date" id="birthdate" name="birthdate">
+
+        <input type="submit" value="valider">
+        <input type="reset" value="réinitialiser">
+    </form>
+</body>
+</html>
