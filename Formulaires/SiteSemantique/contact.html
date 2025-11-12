@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact</title>
+</head>
+<body>
+    
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Accueil</a></li>
+                <li><a href="audio.html">Audio</a></li>
+                <li><a href="video.html">Vidéo</a></li>
+            </ul>
+            <h1>Sémantique et formulaire</h1>
+            <h2>Présentation de la sémantique et des formulaires</h2>
+            <h3>Les dessous de HTML5</h3>
+        </nav>
+    </header>
+
+    <main>
+        <form action="" method="POST">
+            <label for="name">Nom :</label>
+            <input type="text" id="name" name="name">
+
+            <label for="mail">Email :</label>
+            <input type="email" id="mail" name="mail">
+
+            <label class="genre">Civilité</label>
+            <input type="radio" class="genre" name="genre[]" value="homme"> Homme
+            <input type="radio" class="genre" name="genre[]" value="femme"> Femme
+            <input type="radio" class="genre" name="genre[]" value="autre"> Autre
+
+            <label for="newsletter">S'abonner à la newsletter</label>
+            <input type="checkbox" id="newsletter" name="newsletter">
+
+            <input type="reset" value="Effacer">
+        </form>
+    </main>
+
+    <footer>
+        <p>Mentions légales : <a href="https://www.cnil.fr/fr/reglement-europeen-protection-donnees">RGPD</a></p>
+    </footer>
+</body>
+</html>
