@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inscription à un atelier</title>
+</head>
+<body>
+    <form>
+        <label for="name">Nom</label>
+        <input type="text" id="name" name="name" size="30" required="required">
+
+        <label for="email">Email</label>
+        <input type="email" id="email" name="email" placeholder="exemple@domaine.fr" required="required">
+
+        <label for="tel">Téléphone</label>
+        <input type="tel" id="tel" name="tel" pattern="[0-9]{10}" placeholder="10 chiffres">
+
+        <section id="choix_atelier">
+            <h2>Choix de l'atelier</h2>
+
+            <label class="atelier">Design UX</label>
+            <input type="radio" class="atelier" name="atelier" value="design">
+
+            <label class="atelier">Développement web</label>
+            <input type="radio" class="atelier" name="atelier" value="dev">
+
+            <label class="atelier">Accessibilité</label>
+            <input type="radio" class="atelier" name="atelier" value="accessibilite" autofocus="autofocus">
+        </section>
+
+        <section id="horaire_atelier">
+            <h2>Choix de l'horaire</h2>
+
+            <label for="lun_am">Lundi Matin</label>
+            <input type="checkbox" id="lun_am" name="disponibilites[]" value="lundi-matin">
+
+            <label for="mar_pm">Mardi Après-midi</label>
+            <input type="checkbox" id="mar_pm" name="disponibilites[]" value="mardi-apresmidi">
+
+            <label for="mer_ad">Mercredi Journée entière</label>
+            <input type="checkbox" id="mer_ad" name="disponibilites[]" value="mercredi">
+        </section>
+
+        <section id="experience">
+            <h2>Niveau d'expérience</h2>
+
+            <label for="beginner">Débutant</label>
+            <input type="radio" id="beginner" name="niveau" value="debutant">
+
+            <label for="intermediate">Intermédiaire</label>
+            <input type="radio" id="intermediate" name="niveau" value="intermediaire">
+
+            <label for="advanced">Avancé</label>
+            <input type="radio" id="advanced" name="niveau" value="avance">
+        </section>
+
+        <label for="newsletter">Recevoir des newsletter :</label>
+        <input type="checkbox" id="newsletter" name="newsletter" value="oui">
+
+        <label for="conditions">Accepter les conditions :</label>
+        <input type="checkbox" id="conditions" name="conditions" value="oui" required="required">
+
+        <label for="place">Nombre de places :</label>
+        <input type="number" id="place" name="place" min="1" max="5" value="1">
+
+        <label for="promocode">Code Promo</label>
+        <input type="text" id="promocode" name="promocode" value="PROMO2025" readonly="readonly">
+
+        <label for="commentary">Commentaires</label>
+        <input type="text" id="commentary" name="commentary" placeholder="Non disponible pour le moment" disabled="disabled">
+    </form>
+</body>
+</html>
