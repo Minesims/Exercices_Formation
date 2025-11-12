@@ -6,7 +6,7 @@
     <title>Inscription à un atelier</title>
 </head>
 <body>
-    <form>
+    <form action="data.php" method="POST">
         <label for="name">Nom</label>
         <input type="text" id="name" name="name" size="30" required="required">
 
@@ -55,7 +55,7 @@
             <input type="radio" id="advanced" name="niveau" value="avance">
         </section>
 
-        <label for="newsletter">Recevoir des newsletter :</label>
+        <label for="newsletter">Recevoir des newsletters :</label>
         <input type="checkbox" id="newsletter" name="newsletter" value="oui">
 
         <label for="conditions">Accepter les conditions :</label>
