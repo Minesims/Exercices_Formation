@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercice select multiple</title>
+</head>
+<body>
+    
+    <form action="data.php" method="POST">
+
+        <label for="lang">Choisissez la langue principale :</label>
+        <select id="lang" name="lang" aria-required="true" aria-invalid="true" aria-errormessage="true">
+                <option label="&nbsp;" value="" selected="selected" disabled="disabled" hidden="hidden"></option>
+            <optgroup label="Langues Européenne">
+                <option value="francais">Français</option>
+                <option value="anglais">Anglais</option>
+                <option value="espagnol">Espagnol</option>
+                <option value="italien">Italien</option>
+                <option value="portugais">Portugais</option>
+                <option value="allemand">Allemand</option>
+            </optgroup>
+            <optgroup label="Langues Asiatiques">
+                <option value="chinois">Chinois</option>
+                <option value="indou">Indou</option>
+                <option value="russe">Russe</option>
+                <option value="japonais">Japonais</option>
+            </optgroup>
+        </select>
+
+        <label for="pays">Liste des pays visités (Maintenir Ctrl/Cmd pour en sélectionner plusieurs) :</label>
+        <select id="pays" name="pays" multiple="multiple" size="5" aria-describedby="Select" aria-invalid="true" aria-errormessage="true">
+                <option label="&nbsp;" value="" selected="selected" disabled="disabled" hidden="hidden"></option>
+            <optgroup label="Europe">
+                <option value="france">France</option>
+                <option value="angleterre">Angleterre</option>
+                <option value="espagne">Espagne</option>
+                <option value="italie">Italie</option>
+                <option value="portugal">Portugal</option>
+                <option value="allemagne">Allemagne</option>
+            </optgroup>
+            <optgroup label="Asie">
+                <option value="chine">Chine</option>
+                <option value="inde">Inde</option>
+                <option value="russie">Russie</option>
+                <option value="japon">Japon</option>
+            </optgroup>
+        </select>
+        
+        <input type="submit" aria-label="Envoyer" value="Envoyer">
+        <input type="reset" aria-label="Effacer" value="Effacer">
+    </form>
+    <p id="Select">Sélectionnez plusieurs valeurs en appuyant sur la touche Ctrl/Cmd</p>
+</body>
+</html>
