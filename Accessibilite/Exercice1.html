@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulaire d'inscription accessible</title>
+</head>
+
+<body>
+
+    <form action="" method="POST">
+
+        <fieldset aria-required="true">
+            <legend>Identité</legend>         
+            <label for="genre">Civilité</label>
+            <select id="genre" name="genre" autofocus="autofocus" required="required">
+                <optgroup label="Générique">
+                    <option value="monsieur">M.</option>
+                    <option value="madame">Mme</option>
+                    <option value="autre">Autre</option>
+                </optgroup>
+                <optgroup label="Profession">
+                    <option value="professeur">Pr</option>
+                    <option value="docteur">Dr</option>
+                    <option value="maitre">Me</option>
+                </optgroup>
+            </select>
+            <label for="nom">Nom</label required="required">
+            <input type="text" id="nom" name="nom">
+            <label for="firstname">Prénom</label required="required">
+            <input type="text" id="firstname" name="firstname">
+        </fieldset>
+
+        <fieldset>
+            <legend>Inscription aux activités</legend required="required">
+            <input type="checkbox" id="equitation" name="activite">
+            <label for="equitation">Équitation</label>
+            <input type="checkbox" id="football" name="activite">
+            <label for="football">Football</label> 
+            <input type="checkbox" id="orchestre" name="activite">
+            <label for="orchestre">Orchestre</label>
+            <input type="checkbox" id="lecture" name="activite">
+            <label for="lecture">Lecture</label>
+        </fieldset>
+
+        <fieldset>
+            <legend>Durée d'inscription</legend required="required">
+            <input type="radio" id="1month" name="duree">
+            <label for="1month">1 mois</label>
+            <input type="radio" id="3months" name="duree">
+            <label for="3months">3 mois</label>
+            <input type="radio" id="6months" name="duree">
+            <label for="6months">6 mois</label>
+            <input type="radio" id="1year" name="duree">
+            <label for="1year">1 an</label>
+            <input type="radio" id="continue" name="duree">
+            <label for="continue">Contrat renouvelé</label>
+        </fieldset>
+
+        <label for="comments">Commentaire :</label>
+        <textarea id="comments" name="comments" rows="6" cols="60" maxlength="200">Ajouter un commentaire...</textarea>
+
+        <input type="submit" value="Envoyer">
+        <input type="reset" value="Effacer">
+        
+    </form>
+
+</body>
+
+</html>
