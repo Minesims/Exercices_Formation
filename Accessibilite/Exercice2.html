@@ -12,25 +12,25 @@
         <fieldset>
             <legend>Identité</legend>    
 
-            <label for="genre">Civilité</label>
+            <label aria-label="genre" for="genre">Civilité</label>
             <select id="genre" name="genre" autofocus="autofocus" aria-required="true" aria-invalid="true" aria-errormessage="true">
                     <option label="&nbsp;" value="" selected="selected" disabled="disabled" hidden="hidden"></option>
-                <optgroup label="Générique">
+                <optgroup label="Générique" aria-label="Générique">
                     <option value="monsieur">M.</option>
                     <option value="madame">Mme</option>
                     <option value="autre">Autre</option>
                 </optgroup>
-                <optgroup label="Profession">
+                <optgroup label="Profession" aria-label="Profession">
                     <option value="professeur">Pr</option>
                     <option value="docteur">Dr</option>
                     <option value="maitre">Me</option>
                 </optgroup>
             </select>
 
-            <label for="nom">Nom</label>
+            <label aria-label="nom" for="nom">Nom</label>
             <input type="text" id="nom" name="nom" aria-required="true" aria-invalid="true" aria-errormessage="true">
 
-            <label for="firstname">Prénom</label>
+            <label aria-label="firstname" for="firstname">Prénom</label>
             <input type="text" id="firstname" name="firstname" aria-required="true" aria-invalid="true" aria-errormessage="true">
         </fieldset>
 
@@ -38,33 +38,33 @@
             <legend>Inscription aux activités</legend>
 
             <input aria-invalid="true" aria-errormessage="true" tabindex="0" type="checkbox" id="equitation" name="activite">
-            <label for="equitation">Équitation</label>
+            <label aria-label="equitation" for="equitation">Équitation</label>
 
             <input aria-invalid="true" aria-errormessage="true" tabindex="0" type="checkbox" id="football" name="activite">
-            <label for="football">Football</label> 
+            <label aria-label="football" for="football">Football</label> 
 
             <input aria-invalid="true" aria-errormessage="true" tabindex="0" type="checkbox" id="orchestre" name="activite">
-            <label for="orchestre">Orchestre</label>
+            <label aria-label="orchestre" for="orchestre">Orchestre</label>
 
             <input aria-invalid="true" aria-errormessage="true" tabindex="0" type="checkbox" id="lecture" name="activite">
-            <label for="lecture">Lecture</label>
+            <label aria-label="lecture" for="lecture">Lecture</label>
         </fieldset>
 
         <fieldset>
             <legend>Durée d'inscription</legend>
             <input aria-invalid="true" aria-errormessage="true" tabindex="0" type="radio" id="1month" name="duree">
-            <label for="1month">1 mois</label>
+            <label aria-label="1month" for="1month">1 mois</label>
             <input aria-invalid="true" aria-errormessage="true" tabindex="0" type="radio" id="3months" name="duree">
-            <label for="3months">3 mois</label>
+            <label aria-label="3months" for="3months">3 mois</label>
             <input aria-invalid="true" aria-errormessage="true" tabindex="0" type="radio" id="6months" name="duree">
-            <label for="6months">6 mois</label>
+            <label aria-label="6months" for="6months">6 mois</label>
             <input aria-invalid="true" aria-errormessage="true" tabindex="0" type="radio" id="1year" name="duree">
-            <label for="1year">1 an</label>
+            <label aria-label="1year" for="1year">1 an</label>
             <input aria-invalid="true" aria-errormessage="true" tabindex="0" type="radio" id="continue" name="duree">
-            <label for="continue">Contrat renouvelé</label>
+            <label aria-label="continue" for="continue">Contrat renouvelé</label>
         </fieldset>
 
-        <label for="comments">Commentaire :</label>
+        <label aria-label="comments" for="comments">Commentaire :</label>
         <textarea id="comments" name="comments" rows="6" cols="60" maxlength="200">Ajouter un commentaire...</textarea>
 
         <input type="submit" aria-label="Envoyer" value="Envoyer">
