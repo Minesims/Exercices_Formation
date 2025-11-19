@@ -2,7 +2,6 @@ body {
     background-image: url(assets/istockphoto-1143099981-612x612.jpg);
     background-size: cover;
     font-family: "Lexend", sans-serif;
-    font-optical-sizing: auto;
     font-weight: 400;
     font-style: normal;
     min-height: 100vh;
@@ -28,7 +27,6 @@ header > img {
 
 h1 {
     font-family: "Dancing Script", cursive;
-    font-optical-sizing: auto;
     font-weight: 700;
     font-style: normal;
     font-size: 2.7em;
@@ -44,7 +42,7 @@ main {
     background-color: white;
 }
 
-#tips {
+.tips {
     text-align: center;
 }
 
@@ -107,7 +105,6 @@ footer {
 
 h3 {
     font-family: "Dancing Script", cursive;
-    font-optical-sizing: auto;
     font-weight: 700;
     font-size: 2.7em;
     font-style: normal;
